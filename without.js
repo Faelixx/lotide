@@ -35,7 +35,7 @@ const without = function(source, itemsToRemove) {
         withoutResult.splice(j, 1);
       }
     }
-  } console.log(withoutResult);
+  } return withoutResult;
 };
 
 const words = ["Booty", "warrior", "Boondocks"];
