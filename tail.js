@@ -20,7 +20,11 @@ const tail = function(array) {
 };
 
 // Test Case: Array check
-const test = tail(["yo yo", "Lighthouse", "Labs"]);
+let array = ["yo yo", "Lighthouse", "Labs"];
+const test = tail(array);
 
 assertEqual(test[1], "Labs");
 assertEqual(test.length, 2);
+assertEqual(tail(["empty"]).length, 0);
+assertEqual(tail([]).length, 0);
+assertEqual(array.length, 3);
