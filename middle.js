@@ -41,7 +41,7 @@ const middle = function(arr1) {
     return midElement;
     // Condition if the array is an odd number, return one middle number.
   } else if (arr1.length > 2) {
-    midElement.push(arr1[(Math.round(arr1.length / 2)) - 1]);
+    midElement.push(arr1[(Math.floor(arr1.length / 2))]);
     return midElement;
   }
     
