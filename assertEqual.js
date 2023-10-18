@@ -6,9 +6,11 @@ const assertEqual = function(actual, expected) {
   and print out a message telling us if they match or not.
   */
   if (actual === expected) {
-    console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
+    //console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
+    console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
-    console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
+    //console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
+    console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
