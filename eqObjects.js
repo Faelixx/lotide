@@ -39,32 +39,33 @@ const eqObjects = function(object1, object2) {
     // For of loop to ensure that the key arrays match in values.
     for (const objArr1Key of objArr1) {
       // console.log(Array.isArray(object1[objArr1Key]), Array.isArray(object2[objArr1Key]), eqArrays(object1[objArr1Key], object2[objArr1Key])); // test log
-      if (object2.hasOwnProperty.call(objArr1Key)) {
+      if (object2.hasOwnProperty(objArr1Key)) {
+        
         if (Array.isArray(object1[objArr1Key]) && Array.isArray(object2[objArr1Key])) {
           result = eqArrays(object1[objArr1Key], object2[objArr1Key]);
-          if (result = false) {
+          if (result === false) {
             return result;
           }
         } else if (object1[objArr1Key] === object2[objArr1Key]) {
           result = true;
-        } 
-      } 
-      } return result;
+        }
+      }
+    } return result;
   } return result;
 
 
 };
 
-// const shirtObject = { color: "red", size: "medium" };
-// const anotherShirtObject = { size: "medium", color: "red" };
-// assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
-// console.log();
-// const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-// assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
-// console.log();
+const shirtObject = { color: "red", size: "medium" };
+const anotherShirtObject = { size: "medium", color: "red" };
+assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
+console.log();
+const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
+console.log();
 
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
+const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue", "green"] };
 assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true);
 console.log();
 const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
