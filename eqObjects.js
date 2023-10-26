@@ -39,7 +39,7 @@ const eqObjects = function(object1, object2) {
     // For of loop to ensure that the key arrays match in values.
     for (const objArr1Key of objArr1) {
       // console.log(Array.isArray(object1[objArr1Key]), Array.isArray(object2[objArr1Key]), eqArrays(object1[objArr1Key], object2[objArr1Key])); // test log
-      if (object2.hasOwnProperty(objArr1Key)) {
+      if (Object.prototype.hasOwnProperty.call(object2, objArr1Key)) {
         
         if (Array.isArray(object1[objArr1Key]) && Array.isArray(object2[objArr1Key])) {
           result = eqArrays(object1[objArr1Key], object2[objArr1Key]);
