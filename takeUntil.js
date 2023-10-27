@@ -30,7 +30,7 @@ It should keep going until the callback/predicate returns a truthy value."
 
 const takeUntil = function(array, callback) {
   const result = [];
-  for (item of array) {
+  for (const item of array) {
     if (callback(item)) {
       return result;
     }
