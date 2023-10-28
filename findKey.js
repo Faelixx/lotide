@@ -23,18 +23,9 @@ const findKey = function(object, callback) {
   const objKeys = Object.keys(object);
   // Iterate over object keys in a for loop.
   for (const objKey of objKeys) {
-    // Condition if object is inside an object key.
-    if (typeof object[objKey] === "object") {
-      // Condition test for the callback fuinction.
-      if (callback(object[objKey])) {
-        return objKey;
-      }
-      // Condition if no object is stored inside object argument keys.
-    } else if (callback(object[objKey])) {
+    if (callback(object[objKey])) {
       return objKey;
     }
-    
-
   } return undefined;
 
 };
