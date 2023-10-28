@@ -21,25 +21,21 @@ const assertEqual = function(actual, expected) {
 const findKey = function(object, callback) {
   // Create an empty array to store our object keys.
   const objKeys = Object.keys(object);
-  let result = "";
   // Iterate over object keys in a for loop.
   for (const objKey of objKeys) {
     // Condition if object is inside an object key.
     if (typeof object[objKey] === "object") {
-        // Condition test for the callback fuinction.
-        if (callback(object[objKey])) {
-          result = objKey;
-          return result;
-        }
+      // Condition test for the callback fuinction.
+      if (callback(object[objKey])) {
+        return objKey;
+      }
       // Condition if no object is stored inside object argument keys.
     } else if (callback(object[objKey])) {
-      result = objKey;
-      return result;
-    } else {
-      return undefined
+      return objKey;
     }
+    
 
-  } // return result;
+  } return undefined;
 
 };
 
@@ -71,6 +67,11 @@ console.log("---");
 
 const result2 = findKey(data2, x => x === "Hyrule");
 console.log(result2);
+
+console.log("---");
+
+const result3 = findKey(data2, x => x === "Gerudo Fortress");
+console.log(result3);
 
 console.log("---");
 
