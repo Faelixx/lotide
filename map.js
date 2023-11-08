@@ -35,10 +35,9 @@ const map = function(array, callback) {
 
 };
 
+// Test Cases
 const results1 = map(words, word => word[0]);
 const rhymeDict = map(words, word => `${word[0]}ound`)
-
-//console.log(results1);
 
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']);
 console.log("/* */");
