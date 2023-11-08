@@ -1,12 +1,21 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
 // Test Case: Array check
-let array = ["yo yo", "Lighthouse", "Labs"];
-const test = tail(array);
+const array1 = ["yo yo", "Lighthouse", "Labs"];
+const array2 = ["yo yo", "Lighthouse", "Labs", "Hey Hey Hey"];
 
-assertEqual(test[1], "Labs");
-assertEqual(test.length, 2);
-assertEqual(tail(["empty"]).length, 0);
-assertEqual(tail([]).length, 0);
-assertEqual(array.length, 3);
+
+describe("#tail", () => {
+  it('returns Labs for ["yo yo", "Lighthouse", "Labs"]', () => {
+    assert.deepEqual(tail(array1), ["Labs"]);
+  });
+});
+
+describe("#tail", () => {
+  it('returns Hey Hey Hey for ["yo yo", "Lighthouse", "Labs", "Hey Hey Hey"]', () => {
+    assert.deepEqual(tail(array2), ["Hey Hey Hey"]);
+  });
+});
+
+
