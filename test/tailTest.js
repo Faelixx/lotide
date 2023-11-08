@@ -7,14 +7,12 @@ const array2 = ["yo yo", "Lighthouse", "Labs", "Hey Hey Hey"];
 
 
 describe("#tail", () => {
-  it('returns Labs for ["yo yo", "Lighthouse", "Labs"]', () => {
-    assert.deepEqual(tail(array1), ["Labs"]);
+  it('returns ["Lighthouse", "Labs"] for ["yo yo", "Lighthouse", "Labs"]', () => {
+    assert.deepEqual(tail(array1), ["Lighthouse", "Labs"]);
   });
-});
 
-describe("#tail", () => {
   it('returns Hey Hey Hey for ["yo yo", "Lighthouse", "Labs", "Hey Hey Hey"]', () => {
-    assert.deepEqual(tail(array2), ["Hey Hey Hey"]);
+    assert.deepEqual(tail(array2), ["Lighthouse", "Labs", "Hey Hey Hey"]);
   });
 });
 
