@@ -1,17 +1,3 @@
-const assertEqual = function(actual, expected) {
-
-  /* Make the function compare the two values it takes in
-  and print out a message telling us if they match or not.
-  */
-  if (actual === expected) {
-    
-    console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    
-    console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 /* Using the code below, we want to return the tail of an array by
 creating a new array and not changing the inputted array.
 */
