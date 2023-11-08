@@ -1,17 +1,3 @@
-const assertEqual = function(actual, expected) {
-
-  /* Make the function compare the two values it takes in
-  and print out a message telling us if they match or not.
-  */
-  if (actual === expected) {
-    //console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
-    console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    //console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
-    console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const eqArrays = function(arr1, arr2) {
   // Check if both arrays are the same length
   if (arr1.length !== arr2.length) {

@@ -1,18 +1,18 @@
 //Here we have declared our function as a variable expression.
 
-const assertEqual = function(actual, expected) {
+// const assertEqual = function(actual, expected) {
 
-  /* Make the function compare the two values it takes in
-  and print out a message telling us if they match or not.
-  */
-  if (actual === expected) {
-    //console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
-    console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    //console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
-    console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+//   /* Make the function compare the two values it takes in
+//   and print out a message telling us if they match or not.
+//   */
+//   if (actual === expected) {
+//     //console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
+//     console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
+//   } else if (actual !== expected) {
+//     //console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
+//     console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
 
 /*
 Write a function that takes in an object for the first argument and a
@@ -37,6 +37,8 @@ const findKeyByValue = function(object, property) {
 
 };
 
+module.exports = findKeyByValue;
+
 /*
 Alternative version below
 */
@@ -56,11 +58,11 @@ Alternative version below
 
 // Test Cases
 
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire"
-};
+// const bestTVShowsByGenre = {
+//   sciFi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama: "The Wire"
+// };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That 70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That 70s Show"), undefined);

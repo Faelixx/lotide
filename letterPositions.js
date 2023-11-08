@@ -1,26 +1,26 @@
-const eqArrays = function(arr1, arr2) {
-  // Check if both arrays are the same length
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  // Compare each element in the arrays
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// const eqArrays = function(arr1, arr2) {
+//   // Check if both arrays are the same length
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   // Compare each element in the arrays
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
-const assertArraysEqual = function(arr1, arr2) {
-  // Function output into a variable to create a comparison.
-  let arrayCheck = eqArrays(arr1, arr2);
-  if (arrayCheck === true) {
-    console.log(`╰(*°▽°*)╯ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`(┬┬﹏┬┬) Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
+// const assertArraysEqual = function(arr1, arr2) {
+//   // Function output into a variable to create a comparison.
+//   let arrayCheck = eqArrays(arr1, arr2);
+//   if (arrayCheck === true) {
+//     console.log(`╰(*°▽°*)╯ Assertion Passed: ${arr1} === ${arr2}`);
+//   } else {
+//     console.log(`(┬┬﹏┬┬) Assertion Failed: ${arr1} !== ${arr2}`);
+//   }
+// };
 
 /*
 Create a function that takes a sentence string and maps each letter in the string
@@ -51,6 +51,8 @@ const letterPositions = function(sentence) {
   //console.log(results);
 };
 
+module.exports = letterPositions;
+
 // const test2 = {
 //   h: [0],
 //   e: [1],
@@ -60,6 +62,6 @@ const letterPositions = function(sentence) {
 
 // Test Cases
 
-console.log(letterPositions("hello"));
-assertArraysEqual(letterPositions("hello")['e'], [1]);
-// letterPositions("That a munch");
+// console.log(letterPositions("hello"));
+// assertArraysEqual(letterPositions("hello")['e'], [1]);
+// // letterPositions("That a munch");
