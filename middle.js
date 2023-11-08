@@ -9,7 +9,6 @@ const middle = function(arr1) {
   let midElement = [];
   // Condition if the array has no middle, return empty
   if (arr1.length < 3) {
-    midElement = [];
     return midElement;
     // Condition if the array is an even number, return two middle numbers.
   } else if (arr1.length > 2 && arr1.length % 2 === 0) {
