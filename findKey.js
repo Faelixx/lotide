@@ -1,17 +1,3 @@
-// const assertEqual = function(actual, expected) {
-
-//   /* Make the function compare the two values it takes in
-//   and print out a message telling us if they match or not.
-//   */
-//   if (actual === expected) {
-//     //console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
-//     console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
-//   } else if (actual !== expected) {
-//     //console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
-//     console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
-//   }
-// };
-
 /*
 * findKey takes in an object and a callback.
 * It should scan the object and return the FIRST key for with the callback returns a truthy value
@@ -32,46 +18,3 @@ const findKey = function(object, callback) {
 
 module.exports = findKey;
 
-// Test Cases Below
-
-// const data1 = {
-//   "Blue Hill":  { stars: 1 },
-//   "Akaleri":    { stars: 3 },
-//   "noma":       { stars: 2 },
-//   "elBulli":    { stars: 3 },
-//   "Ora":        { stars: 2 },
-//   "Akelarre":   { stars: 3 }
-// };
-
-// const data2 = {
-//   "Zelda":  "Hyrule",
-//   "Tetra":  "Pirates",
-//   "Agitha": "Insects",
-//   "Midna":  "Twilight",
-//   "Ruto":   "Zora's Domain"
-// };
-
-
-// const result1 = findKey(data1, x => x.stars === 2);
-
-// console.log(result1);
-
-// console.log("---");
-
-// const result2 = findKey(data2, x => x === "Hyrule");
-// console.log(result2);
-
-// console.log("---");
-
-// const result3 = findKey(data2, x => x === "Gerudo Fortress");
-// console.log(result3);
-
-// console.log("---");
-
-// assertEqual(result1, "noma");
-// console.log("---");
-// assertEqual(result1, 2);
-// console.log("---");
-// assertEqual(result2, "Zelda");
-// console.log("---");
-// assertEqual(result1, "Ruto");

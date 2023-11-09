@@ -1,21 +1,3 @@
-//Here we have declared our function as a variable expression.
-
-const { count } = require("console");
-
-// const assertEqual = function(actual, expected) {
-
-//   /* Make the function compare the two values it takes in
-//   and print out a message telling us if they match or not.
-//   */
-//   if (actual === expected) {
-//     //console.log("╰(*°▽°*)╯Assertion Passed: " + actual + " === " + expected);
-//     console.log(`╰(*°▽°*)╯ Assertion Passed: ${actual} === ${expected}`);
-//   } else if (actual !== expected) {
-//     //console.log("(┬┬﹏┬┬)Assertion Failed: " + actual + " !== " + expected);
-//     console.log(`(┬┬﹏┬┬) Assertion Failed: ${actual} !== ${expected}`);
-//   }
-// };
-
 /*
 The returned value of countLetters should look like an object that shows how many
 times each letter in the function argument shows up in the argument.
@@ -48,11 +30,3 @@ const countLetters = function(string) {
 };
 
 module.exports = countLetters;
-
-// Test Cases
-
-// const munch = countLetters("You thought I was feeling you?!");
-// assertEqual(munch["g"], 2);
-// assertEqual(munch["Y"], 1);
-// assertEqual(munch[" "], 1);
-// assertEqual(munch[" "], undefined);

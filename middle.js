@@ -1,4 +1,3 @@
-
 /*
 Create a function that returns the 'middle' element of an odd number array
 And the two 'middle' elements of an even number array that's greater than 2
