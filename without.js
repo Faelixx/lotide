@@ -1,3 +1,7 @@
+// .without() passes two arrays as arguments.
+// First array -> 'source' is the array to be changed.
+// Second array -> 'itemsToRemove' is the list of elements to be removed from the first array 
+
 const without = function(source, itemsToRemove) {
   let withoutResult = source.slice();
   for (let i = 0; i < itemsToRemove.length; i++) {

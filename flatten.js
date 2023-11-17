@@ -1,3 +1,5 @@
+// Takes an array with a sub array and flattens it into one single array.
+
 const flatten = function(arr1) {
   let flattened = [];
   for (let i = 0; i < arr1.length; i++) {

@@ -1,3 +1,4 @@
+// Function that compares two objects and logs the result
 const eqObjects = require('./eqObjects');
 
 const assertObjectsEqual  = function(actual, expected) {

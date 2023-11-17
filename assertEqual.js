@@ -1,3 +1,5 @@
+// Passes two arguments to function and checks equality.
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {

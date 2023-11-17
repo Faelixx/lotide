@@ -1,3 +1,7 @@
+// Use eqArrays to compare object keys stored in an array.
+
+const eqArrays = require('./eqArrays');
+
 const eqObjects = function(object1, object2) {
     const objArr1 = Object.keys(object1);
     const objArr2 = Object.keys(object2);
